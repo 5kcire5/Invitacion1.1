@@ -574,7 +574,7 @@
         <p class="rsvp-text">Tu confirmación es muy importante</p>
         <p class="rsvp-guests">Invitación válida para 1 personas</p>
         <a class="forms-button" href="https://docs.google.com/forms/d/e/1FAIpQLSf0f5G4-GJ5xve04HRwNaoCpZBo_5yp-B7rtbfuSqfEAGhWvA/viewform?usp=header" aria-disabled="true" tabindex="-1">Confirmar asistencia</a>
-                <p class="rsvp-deadline" id="rsvp-deadline" aria-live="polite">Confirma tu asistencia antes del *** de 2026.</p>
+                <p class="rsvp-deadline" id="rsvp-deadline" aria-live="polite">Confirma tu asistencia antes del 1 de Diciembre de 2026.</p>
 
     </section>
     <section class="address-section" aria-label="Ubicación del evento">
@@ -606,7 +606,7 @@
 
     const formsButton = document.querySelector(".forms-button");
     const rsvpDeadlineMessage = document.getElementById("rsvp-deadline");
-    const rsvpCloseDate = new Date(2026, 12, 14);
+    const rsvpCloseDate = new Date(2026, 12, 1);
 
     function actualizarEstadoConfirmacion() {
         const plazoCerrado = Date.now() >= rsvpCloseDate.getTime();
